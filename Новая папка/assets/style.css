@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+font-family: Montserrat, Arial, Helvetica, sans-serif;
+box-sizing: border-box;
+}
+body#auth{
+    background: url(https://sport-dog.ru/wp-content/uploads/4/0/a/40ab6499f014befe9b40f6402d2110c3.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#auth form{
+    background: #ccffcc;
+    color:burlywood;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+#auth form legend{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900 ;
+}
+#auth form label{
+    font-size:20px;
+    margin: 20px 0 0 0;
+}
+#auth form input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin: 5px,0,0,0;
+
+    border-radius: 10px;
+    box-shadow: 0 0 5px #333;
+}
+#auth form button{
+    width: 50%;
+    padding: 10px;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    border: none;
+    outline: none;
+    margin-top: 40px;
+
+}
+header{
+    background: linear-gradient(to right,blue 20% , purple 70% );
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container nav ul{
+display: flex ;
+list-style: none;
+}
+.container nav ul a{
+    display:block;
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+
+}
+.container nav ul a:hover {
+    transition: .5s;
+    background-color: rgb(150, 33, 144);
+    transform: translateY(10px);
+}
+.container .logo{
+    width:10%;
+}
+.container img{
+    width: 100%;
+}
+/* блок мейн */
+.section-welcome{
+    background:url(./images/igor-lypnytskyi-m61MVp0w1p4-unsplash.jpg) ;
+    /*растягиваем картинку на ширину родителя на макс*/
+    background-size: cover;
+    color: #fff;
+    /*цвет текста сокращение- с*/
+    padding: 20px 0;
+}
+.section-welcome h1,.section-welcome h2{
+    text-align: center; /* выравнивание текста по центру*/
+    padding: 0 20%; /* Внуренние отступы*/
+    padding-top: 100px;
+} 
+
+.section-welcome h2{
+    font-size: 10 px;
+    color: #c7c7c7;
+}
+
+.section-welcome .row{
+    display: flex; /* Срочное расположение элементов*/
+    justify-content: space-between; /* отступы между блоками*/
+    margin-top: 100px;
+}
+
+.section-welcome .row .item{
+    width: 20%;
+}
+
+.section-welcome .row .item .line{
+    width: 100%; /* высота блока*/
+    height: 2px;
+    background: #fff;
+    display: block; /* блок отображение элементов*/
+    margin-bottom: 5px;
+}
+.section-welcome .row .item a{
+    color: white;
+    /* убирает подчеркивание ссылки */
+    /* td */
+    text-decoration: none;
+}
+.section-welcome .row .item .line:after{
+    display: block;
+    content: "";
+    height: 100%;
+    width: 10%;
+    background-color:#333;
+    transition: 1s;      
+}
+.section-welcome .row .item:hover .line:after{
+    transition: .2s;
+    width: 80%;}
+
+    .section-stats{
+        background: linear-gradient(to left, orange, purple);
+        color: #fff;
+    }
+    .section-stats .container{
+        display: flex;
+        color: #ddc2c2;
+
+    }
+.section-stats .container .item{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    padding: 80px 0;
+    border-right: 2px rgba(255, 255, 255, 0.428) solid;
+    
+
+    height: 100%;
+
+}
+.section-stats .container .item:first-child{
+    border-left: 2px rgba(255, 255, 255, 0.428)solid;
+}
+.section-stats .container h3{
+    font-size: 10px
+}
+.section-about{
+
+}
+.txt-description{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.script{
+    font-family: Kaushan Script;
+}
+
+.txt-description h3{
+    margin-top: 9vh;
+    font-size: 1.5rem;
+
+}
+.txt-description h2{
+    margin-top: 2.5vh;
+    margin-top: 4.5vh;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+}
+.txt-description p{
+    margin-top: 4.5vh;
+    font-size: 0.9735;
+    color: #999;
+    padding: 0 10%;
+}
+.txt-description .line{
+    margin-top: 4vh;
+    width: 20%;
+    height: 3px;
+    background: rgb(150, 33, 144);
+}
+.section-about .images{
+    display: flex;
+    justify-content: space-between;
+
+}
+.section-about .images .bg{
+    width: 32%;
+    height: 180px;
+    background: #95e1d3;
+}
+.section-about .images .bg .img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    
+}
+
+.section-about .images .bg:nth-child(1) .img{
+    background-image: url(./images/hyundai-motor-group-Sx_bKz49IO0-unsplash.jpg);
+}
+.section-about .images .bg:nth-child(2) .img{
+    background-image: url(./images/igor-lypnytskyi-m61MVp0w1p4-unsplash.jpg);
+}
+.section-about .images .bg:nth-child(3) .img{
+    background-image: url(./images/rob-potter-JVePgf8IjWQ-unsplash.jpg)
+}
+.section-about .images .bg .grad{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, rgba(243,129,129,0.8), rgba(252,227,138,0.8));
+}
+.section-about .images .bg .grad{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: azure;
+   opacity: 0;
+   transition: 1s;
+
+}
+.section-about .images .bg:hover .img .grad{
+    opacity: 1;
+    transition: .5s;
+}
+.section-about .images .bg:hover .img{
+    transform: translate(-10px,-10px);
+    transition: .5s;
+}
+.section-services{
+    background-color: #8cd3d1;
+    padding: 60px 0;
+}
+.section-services .container:nth-child(2){
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section-services .container:nth-child(2) .cards{
+    width: 30%;
+    display: flex;
+    padding: 10px;
+}
+.section-services .container:nth-child(2) .line{
+    width: 100%;
+    height: 2PX;
+    background-color: #999;
+    margin: 40px 0;
+}
+
+.section-services .container:nth-child(2) .cards h3,
+.section-services .container:nth-child(2) .cards i{
+    color: aquamarine;
+
+}
+.section-services .container:nth-child(2) .cards i{
+    font-size: 25px;
+    margin-right: 10px;
+}
+.section-services .container:nth-child(2) .cards p{
+    margin-top: 10px;
+    font-size: 10px;
+    color: #666;
+}
+
+.section-slider .hider{
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    border-radius: 5px;
+
+}
+.section-slider .hider .row{
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+.section-slider .hider .image{
+    width: calc(100%/3);
+    height: 100%;
+    animation: carousel 10s  ease-in-out infinite;
+    background-size: cover;
+
+    display: flex;
+    align-items: end;
+    border-radius: 5px;
+}
+
+
+@keyframes carousel{
+    0%,10%{
+        transform: translateX(0);
+    }
+    30%,50%{
+        transform: translateX(-100%);
+    }
+    70%,90%{
+        transform: translateX(-200%);
+    }
+    100%{
+    transform:translateX(0)}
+}
+
+.section-slider .hider .image:nth-child(1){
+background-image:url(https://images.unsplash.com/photo-1685171755238-0b1c05b0fd84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80)
+}
+
+.section-slider .hider .image:nth-child(2){
+background-image: url(https://images.unsplash.com/photo-1682686578023-dc680e7a3aeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)
+}
+.section-slider .hider .image:nth-child(3){
+background-image: url(https://images.unsplash.com/photo-1687178101608-fadc5f1b5a2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1026&q=80);
+}
+.section-slider .darker{
+    height: 20%;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.section-slider .darker p{
+    margin-top: 10px;
+    color: aliceblue;
+    font-size: 10px;
+}
+.section-slider{
+    margin-bottom: 20px;
+}
+
+.second-slider input{
+   display: none;
+
+}
+
+.second-slider .hider.image{
+   animation: none;
+}
+#slider1:checked~ .test{
+    background-color: red;
+
+}
+
+#slider2:checked~ .test{
+    background-color: green;
+}
+
+#slider3:checked~ .test{
+    background-color: blue;
+}
+.second-slider .container{
+    position: relative;
+}
+.second-slider .container .labels{
+    position: absolute;
+    bottom: 0px ;
+    right: calc(50% - 75px);
+    display: flex;
+    z-index: 1;
+}
+.second-slider .container .labels label{
+   width: 30px;
+   height: 10px;
+   margin: 0 10px;
+   border-radius: 10px;
+   display: block;
+}
+#slide1:checked ~ .labels libel:nth-child(1),
+#slide2:checked ~ .labels libel:nth-child(2),
+#slide3:checked ~ .labels libel:nth-child(3){
+    width: 60px;
+    background-color: #fff;
+}
+#slide1:checked ~ .hider.image{
+    transform: translateX(0);
+    transition: 1s;
+}
+#slide2:checked ~ .hider.image{
+    transform: translateX(-100%);
+    transition: 1s;
+}
+#slide3:checked ~ .hider.image{
+    transform: translateX(-200%);
+    transition: 1s;
+}
+
+.section-subscribe h2{
+display: flex;
+justify-content: center;
+}
+.section-subscribe input{
+
+
+}
+.section-subscribe input:valid{
+
+}
+.section-subscribe input:invalid{
+
+
+}
+.section-subscribe button{
+border: none;
+outline: none;
+}
+.section-grid .container{
+    display: grid;
+    height: calc(700px/2);
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+    .section-grid .container .item:nth-child(1){
+        background-image: url(https://images.unsplash.com/photo-1556189250-72ba954cfc2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+        background-size: cover;
+    }
+    .section-grid .container .item:nth-child(2){
+        background-image: url(https://plus.unsplash.com/premium_photo-1687294573633-eaa570a133d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+        background-size: cover;
+    }
+    .section-grid .container .item:nth-child(3){
+        background-image: url(https://images.unsplash.com/photo-1481437642641-2f0ae875f836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+        background-size: cover;
+    }
+    .section-grid .container .item:nth-child(4){
+        background-image:url(https://images.unsplash.com/photo-1603133198679-76967c3b1e19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80); 
+        background-size: cover;
+    }
+    .section-grid .container .item:nth-child(5){
+        background-image:url(https://images.unsplash.com/photo-1418815252939-c13a13baa1cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+        background-size: cover;
+    }
+    .section-grid .container .item:nth-child(6){
+        background-image:url(https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+        background-size: cover;
+    }
+    .section-grid .container .item:nth-child(7){
+        background-image:url(https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+        background-size: cover;
+        grid-row: 1 / 3;
+        grid-column: 3;
+    }
+    .section-grid .container .forground{
+        background-image: linear-gradient(#18dab6c5, #a2a0a0c5);
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: .5s;
+        }
+    .section-grid .container .item:hover .forground{
+        opacity: 1;
+        transition: .2s;
+    }
+    .section-grid h3{
+        font-size: 14px;
+    }
+    .section-grid p{
+        font-size: 10px;
+    }
+    .section-grid2 .container{
+    display: grid;
+    height: 1750px; 
+    grid-template-rows:repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    }
+    
+.section-grid2 .container .item:nth-child(1){
+    background-image:url(https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80) ;
+    background-size: cover;
+    grid-row: 1;
+    grid-column: 1 / 3;
+}  
+.section-grid2 .container .item:nth-child(2){
+    background-image:url(https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1575&q=80);
+    background-size: cover; 
+    grid-column: 2 / 4 ;
+}
+.section-grid2 .container .item:nth-child(3){
+    background-image:url(https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80) ;
+    background-size: cover;
+    grid-column: 3 / 5;
+}
+.section-grid2 .container .item:nth-child(4){
+    background-image:url(https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80) ;
+}
+.section-grid2  .item:nth-child(5){
+    background-image:url(https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80) ;
+     background-size: cover;
+}
+.section-grid2 .item:nth-child(6){
+    background-image:url(https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80) ;
+    background-size: cover;
+}
+
+.section-accordion label{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: #35c7ac  1px solid;
+    font-size: 30px;
+    margin: 20px;
+}
+.section-accordion label i{
+    font-size: 20px;
+
+}
+
+.section-accordion .info{
+    width: 100%;
+    height: 0;
+    padding: 0 10px 0 60px;
+    padding-left: 60px;
+    border: #19927c  1px solid;
+    border-top: none;
+    font-size: 25px;
+    overflow: hidden;
+    transition: .3s;
+    margin: 20px;
+}
+#accord1:checked ~ .info{
+    height: 180px;
+    padding: 10px 10px 10px 60px;
+    transition: .3s;
+    
+}
+#accord2:checked ~ .info{
+    height: 180px;
+    padding: 10px 10px 10px 60px;
+    transition: .3s;
+
+}
+#accord3:checked ~ .info{
+    height: 180px;
+    padding: 10px 10px 10px 60px;
+    transition: .3s;
+
+}
+#accord1:checked ~ label i{
+    transform: rotate(180deg);
+    transition: .3s;
+}
+#accord2:checked ~ label i{
+    transform: rotate(180deg);
+    transition: .3s;
+}
+#accord3:checked ~ label i{
+    transform: rotate(180deg);
+    transition: .3s;
+}
+.section-blog .container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.section-blog .container .card{
+    width: 30%;
+
+}
+.section-blog .container .card .image{
+    height: 200px;
+    background: red;
+
+    position: relative;
+
+}
+.section-blog .container .card .image .date{
+    width: 20%;
+    height: 30%;
+    background-color: #35c7ac;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+}
+
+

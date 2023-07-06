@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="big-reactangle">
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <style>
+        /*стили*/
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .big-reactangle{
+            width:  1000px;
+            height: 1000px;
+            border: 3px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+
+        }
+        .small-reactangle{
+            width:  30%;
+            height: 30%;
+            background-color: aliceblue;
+            border: 10px solid red;
+            
+            display: flex;
+        }
+        .small-reactangle:nth-child(2){
+            justify-content: space-between;
+        }
+        .small-reactangle:nth-child(3){
+             flex-direction: column;
+        }
+        .small-reactangle:nth-child(4){
+             flex-direction: column;
+             justify-content:space-between ;
+        }
+        .small-reactangle:nth-child(5){
+             align-items: center;
+            justify-content: center;
+             justify-content:space-around ;
+             
+        }
+        .small-reactangle:nth-child(6){
+           flex-direction: column;
+           justify-content: space-evenly ;
+           align-items: center;
+        }
+        .small-reactangle:nth-child(6) .circle:nth-child(2){
+            flex-direction: column;
+            align-self: flex-end;
+            justify-self: end;
+             
+        }
+        .small-reactangle:nth-child(7){
+           flex-wrap: wrap;
+           justify-content: space-between;
+           align-content: space-between;
+           
+          
+        }
+     
+        .small-reactangle:nth-child(8){
+           flex-wrap: wrap;
+           justify-content: space-between;
+           align-content: space-between;
+           flex-direction: column;
+           
+          
+        }
+     
+        .circle {
+            width: 27%;
+            height: 27%;
+            background-color: rgb(56, 130, 196);
+            border-radius: 50%; 
+
+       }
